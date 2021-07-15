@@ -1,3 +1,8 @@
+
+"sitecode" in src/sitecode.js contain a passcode to access the site and ignored by .ignored
+
+setup before start a project!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
