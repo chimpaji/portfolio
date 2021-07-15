@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 #sitecode 
-/src/sitecode.js
+# /src/sitecode.js

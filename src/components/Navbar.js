@@ -9,6 +9,10 @@ const navbar = [
 		name: "About",
 		link: "/about",
 	},
+	{
+		name: "Contact",
+		link: "/about",
+	},
 ];
 
 const Navbar = () => {
@@ -23,7 +27,9 @@ const Navbar = () => {
 				))}
 			</div>
 
-			<div className='p-1'>🍑</div>
+			<a href='#' className='p-1'>
+				🍎
+			</a>
 		</div>
 	);
 };
