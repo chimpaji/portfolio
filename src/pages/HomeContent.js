@@ -105,8 +105,9 @@ const HomeContent = () => {
 						</div>
 					</div>
 				</div>
-				<div fourth className=''>
+				<div fourth className='divide-y-2 divide-gray-300'>
 					<div className='text-4xl font-bold mb-4'>Goals</div>
+					<div className='pt-4'>-something here</div>
 				</div>
 			</div>
 		</div>
