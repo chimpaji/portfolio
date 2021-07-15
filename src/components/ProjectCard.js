@@ -1,7 +1,7 @@
 const ProjectCard = (props) => {
 	const { preview, link, code, name, status } = props;
 	return (
-		<div card className='w-96 flex flex-col text-black rounded'>
+		<div card className='w-72 md:w-80 lg:w-96 max-w-screen-md flex flex-col text-black rounded'>
 			<div
 				className='w-full h-48 bg-cover bg-center rounded-t flex justify-end items-end'
 				style={{

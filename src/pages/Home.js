@@ -13,7 +13,7 @@ const Home = () => {
 					<Route path='/' exact component={HomeContent} />
 					<Route path='/about' exact component={About} />
 				</Switch>
-				<Footer />
+				<Footer/>
 			</Router>
 		</div>
 	);
