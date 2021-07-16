@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { GiInvisibleFace } from "react-icons/gi";
+import { TiPhone } from "react-icons/ti";
 const navbar = [
 	{
 		name: "Home",
@@ -17,7 +18,7 @@ const navbar = [
 
 const Navbar = () => {
 	return (
-		<div className='bg-gray-900 w-full py-2 xl:px-20 flex justify-between space-x-4 border-b-2 border-gray-700'>
+		<div className='flex justify-between w-full py-2 space-x-4 bg-gray-900 border-b-2 border-gray-700 xl:px-20'>
 			<div className='p-1'>
 				<GiInvisibleFace size='32px' />
 			</div>
@@ -29,8 +30,8 @@ const Navbar = () => {
 				))}
 			</div>
 
-			<a href='#' className='p-1'>
-				🍎
+			<a href='https://join.skype.com/uA9SCVCPFfCZ' className='p-1 '>
+				<TiPhone size='32px' />
 			</a>
 		</div>
 	);

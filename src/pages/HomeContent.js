@@ -52,42 +52,55 @@ const tech = ["CSS", "HTML", "JAVASCRIPT", "TAILWIND", "HEROKU"];
 
 const HomeContent = () => {
 	return (
-		<div className='h-full w-full flex flex-col items-center'>
-			<div className='w-3/4 max-w-3xl py-10 flex flex-col space-y-10'>
+		<div className='flex flex-col items-center w-full h-full'>
+			<div className='flex flex-col w-3/4 max-w-3xl py-10 space-y-10'>
 				<div aboutMe header className='divide-y-2 divide-gray-300'>
 					<div className='text-4xl font-bold'>
+						Hello World,<span> </span>
 						<span class='bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500'>
-							Hello world
+							I'm Champ
 						</span>
-						, I'm Champ👋
+						👋
 					</div>
 
-					<div className='flex flex-col space-y-2 mt-2 pt-4'>
+					<div className='flex flex-col pt-4 mt-2 space-y-2'>
 						<div>
-							I'm asdfasdfasdf asdfsdfasdfasdfasdfasd asdfasdfsdafasdfasdfasdf
-							asdfasdfasdf asdfasdfasdfsadfasd
+							My name is Champ Paradorn Thongsupaporn. I'm a developer,
+							entrepreneur, lifelong learner.
 						</div>
-						<div>xxxx xxxxx xxxx xxxxx xxxxx xxxxx xxxx xxx xxxx xxxxx </div>
 						<div>
-							YYYY YYYY YYY YYYYY YYYY YY YYYYYY YY YY YYY YY YY YYY Y Y YYYYY Y
-							YY YYY YYYYY Y Y YYY YY YY Y YYYYY YYYY{" "}
+							In the day, I lead and create countless products, while enjoy
+							learning new languages, and frameworks.
+						</div>
+						<div>
+							I listen to{" "}
+							<a
+								href='https://www.youtube.com/user/PowerfulJRE'
+								className='text-blue-500'
+							>
+								Joe Rogan Podcast
+							</a>{" "}
+							and read{" "}
+							<a href='https://twitter.com/elonmusk'>Elon Musk's tweeter</a> in
+							my spare time. if you like to have a conversation about partial
+							thinking methodology or UFO, dont hesitate to dm me.🛸
 						</div>
 					</div>
 				</div>
 				<div projects className='divide-y-2 divide-gray-300'>
-					<div className='text-4xl font-bold mb-4'>Selected Projects</div>
+					<div className='mb-4 text-4xl font-bold'>Selected Projects</div>
 
-					<div className='pt-4 grid grid-cols-1 md:grid-cols-2 gap-4 '>
+					<div className='grid grid-cols-1 gap-4 pt-4 md:grid-cols-2 '>
 						{projectData.map((project) => (
 							<ProjectCard {...project} />
 						))}
 					</div>
 				</div>
 				<div third className='divide-y-2 divide-gray-300 '>
-					<div className='text-4xl font-bold mb-4'>Techonologies</div>
+					<div className='mb-4 text-4xl font-bold'>Techonologies</div>
 
-					<div className='flex w-full justify-center'>
-						<div className='pt-4 grid grid-cols-4 md:grid-cols-8 w-full gap-4'>
+					<div className='flex justify-center w-full'>
+						<div className='grid w-full grid-cols-4 gap-4 pt-4 md:grid-cols-8'>
 							<ImCss3 size='64px' />
 							<RiHtml5Line size='64px' />
 							<SiJavascript size='64px' />
@@ -106,7 +119,7 @@ const HomeContent = () => {
 					</div>
 				</div>
 				<div fourth className='divide-y-2 divide-gray-300'>
-					<div className='text-4xl font-bold mb-4'>Goals</div>
+					<div className='mb-4 text-4xl font-bold'>Goals</div>
 					<div className='pt-4'>something here</div>
 				</div>
 			</div>

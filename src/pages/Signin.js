@@ -22,8 +22,8 @@ const Signin = ({ history }) => {
 	const [welcome, setWelcome] = useState("");
 
 	return (
-		<div className='w-full flex h-screen justify-center items-center bg-gray-800 text-xl text-gray-900'>
-			<div className='w-6/12 flex flex-col items-center space-y-2 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-10 rounded'>
+		<div className='flex items-center justify-center w-full h-screen text-xl text-gray-900 bg-gray-800'>
+			<div className='flex flex-col items-center w-8/12 p-4 py-20 space-y-2 rounded md:w-6/12 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500'>
 				<div className='mb-2'>Fill a secret code 🔐🤫</div>
 				{welcome && <div>You're awesome💐</div>}
 				{error && <div>{error}</div>}
@@ -33,13 +33,13 @@ const Signin = ({ history }) => {
 				>
 					<input
 						type='password'
-						className=' focus:outline-none border-2 border-gray-400'
+						className='w-48 border-gray-400 borde48r-2 md:w-64 focus:outline-none'
 						onChange={(e) => {
 							setError(null);
 							setPassword(e.target.value);
 						}}
 					/>
-					<button className='p-2 bg-white hover:bg-black hover:text-white   rounded'>
+					<button className='p-2 bg-white rounded hover:bg-black hover:text-white'>
 						SUBMIT
 					</button>
 				</form>
