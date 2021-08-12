@@ -16,35 +16,35 @@ import { GrGraphQl } from "react-icons/gr";
 
 const projectData = [
 	{
-		name: "Snapbox",
+		name: "Snappic",
 		code: "https://google.com",
-		link: "https://youtube.com",
+		link: "https://snappic.chimpaji.com",
 		preview: "https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif",
 		status: "Ongoing",
 		tech: ["XXX,YYY,ZZZ"],
 	},
 	{
 		name: "Snapbox",
-		code: "https://google.com",
-		link: "https://youtube.com",
+		code: "",
+		link: "https://spotify.chimpaji.com",
 		preview: "https://media.giphy.com/media/cJYxwJ9QsP9wS1oYA6/giphy.gif",
 		status: "Ongoing",
 		tech: ["XXX,YYY,ZZZ"],
 	},
 	{
-		name: "Snapbox",
-		code: "https://google.com",
-		link: "https://youtube.com",
+		name: "Foodder",
+		code: "",
+		link: "",
 		preview: "https://media.giphy.com/media/U2GdAhYjS9fVycGhla/giphy.gif",
-		status: "Ongoing",
+		status: "Discontinue",
 		tech: ["XXX,YYY,ZZZ"],
 	},
 	{
-		name: "Snapbox",
-		code: "https://google.com",
-		link: "https://youtube.com",
+		name: "Kodtep",
+		code: "",
+		link: "",
 		preview: "https://media.giphy.com/media/U5VkxjCkTm87ovq8hq/giphy.gif",
-		status: "Ongoing",
+		status: "Discontinue",
 		tech: ["XXX,YYY,ZZZ"],
 	},
 ];
@@ -54,7 +54,7 @@ const HomeContent = () => {
 	return (
 		<div className='flex flex-col items-center w-full h-full'>
 			<div className='flex flex-col w-3/4 max-w-3xl py-10 space-y-10'>
-				<div aboutMe header className='divide-y-2 divide-gray-300'>
+				<div className='divide-y-2 divide-gray-300'>
 					<div className='text-4xl font-bold'>
 						Hello World,<span> </span>
 						<span class='bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500'>
@@ -66,11 +66,13 @@ const HomeContent = () => {
 					<div className='flex flex-col pt-4 mt-2 space-y-2'>
 						<div>
 							My name is Champ Paradorn Thongsupaporn. I'm a developer,
-							entrepreneur, lifelong learner.
+							entrepreneur, indy hacker🐱‍💻. Born and raise in Thailand but I'm
+							never enough with the beach here🌞
 						</div>
 						<div>
-							In the day, I lead and create countless products, while enjoy
-							learning new languages, and frameworks.
+							I enjoy making thingsss done, while have opportunity to learn new
+							languages, and framworks. Transformed complicated tasks into easy
+							peasy lemon is my fav!
 						</div>
 						<div>
 							I listen to{" "}
@@ -81,22 +83,25 @@ const HomeContent = () => {
 								Joe Rogan Podcast
 							</a>{" "}
 							and read{" "}
-							<a href='https://twitter.com/elonmusk'>Elon Musk's tweeter</a> in
-							my spare time. if you like to have a conversation about partial
-							thinking methodology or UFO, dont hesitate to dm me.🛸
+							<a href='https://twitter.com/elonmusk' className='text-blue-500'>
+								Elon Musk's tweets
+							</a>{" "}
+							in my spare time. if you like to have a conversation about how
+							partial thinking methodology work or how ravens are smarter than
+							chimps, please dont hesitate to dm me.🛸
 						</div>
 					</div>
 				</div>
-				<div projects className='divide-y-2 divide-gray-300'>
+				<div className='divide-y-2 divide-gray-300'>
 					<div className='mb-4 text-4xl font-bold'>Selected Projects</div>
 
 					<div className='grid grid-cols-1 gap-4 pt-4 md:grid-cols-2 '>
-						{projectData.map((project) => (
-							<ProjectCard {...project} />
+						{projectData.map((project, index) => (
+							<ProjectCard key={index} {...project} />
 						))}
 					</div>
 				</div>
-				<div third className='divide-y-2 divide-gray-300 '>
+				<div className='divide-y-2 divide-gray-300 '>
 					<div className='mb-4 text-4xl font-bold'>Techonologies</div>
 
 					<div className='flex justify-center w-full'>
@@ -118,10 +123,10 @@ const HomeContent = () => {
 						</div>
 					</div>
 				</div>
-				<div fourth className='divide-y-2 divide-gray-300'>
+				{/* <div fourth className='divide-y-2 divide-gray-300'>
 					<div className='mb-4 text-4xl font-bold'>Goals</div>
 					<div className='pt-4'>something here</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

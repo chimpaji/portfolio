@@ -6,25 +6,29 @@ const navbar = [
 		name: "Home",
 		link: "/",
 	},
-	{
-		name: "About",
-		link: "/about",
-	},
+	// {
+	// 	name: "About",
+	// 	link: "/about",
+	// },
 	{
 		name: "Contact",
-		link: "/about",
+		link: "/contact",
 	},
 ];
 
 const Navbar = () => {
 	return (
-		<div className='flex justify-between w-full py-2 space-x-4 bg-gray-900 border-b-2 border-gray-700 xl:px-20'>
+		<div className='flex justify-between w-full py-2 space-x-4 bg-gray-900 border-b-2 border-gray-700 sm:space-x-0 xl:px-15'>
 			<div className='p-1'>
 				<GiInvisibleFace size='32px' />
 			</div>
 			<div className='flex space-x-6'>
-				{navbar.map((nav) => (
-					<NavLink className='p-1 rounded hover:bg-gray-700' to={`${nav.link}`}>
+				{navbar.map((nav, index) => (
+					<NavLink
+						key={index}
+						className='p-1 rounded hover:bg-gray-700'
+						to={`${nav.link}`}
+					>
 						{nav.name}
 					</NavLink>
 				))}
